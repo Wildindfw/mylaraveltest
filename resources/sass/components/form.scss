@@ -1,0 +1,64 @@
+.post-form, 
+.profile-form { 
+    background-color: $bg-item; 
+    width: 100%; 
+    padding: 20px; 
+
+    font-family: $font-family-sans-serif; 
+
+    border-radius: 4px; 
+
+    label { 
+        width: 30%; 
+        display: inline-block; 
+        font-weight: bold; 
+    }
+
+    input[type=text] { 
+        width: 60%; 
+        margin-left: auto; 
+    }
+
+    .required { 
+        font-weight: bold; 
+        color: red; 
+    }
+
+    .form-field { 
+        margin-bottom: 15px; 
+    }
+
+    input[type=submit] { 
+        /* Stolen from Buttons */ 
+        display: inline-block; 
+        border: 1px solid $brand-blue; 
+        background-color: $brand-blue; 
+        color: $bg-item; 
+        border-radius: 4px; 
+        font-weight: bold;
+        padding: 3px 16px; 
+        font-size: 12px;  
+        font-family: $font-family-button; 
+        font-weight: 700; 
+        line-height: 24px; 
+        letter-spacing: 0.5px; 
+        text-transform: uppercase; 
+
+        &:hover { 
+            background-color: $brand-blue-highlight; 
+        }
+    }
+
+    textarea { 
+        overflow: scroll;
+        resize: none; 
+        width: 100%; 
+        margin-left: auto; 
+    }
+}
+
+.post-form { 
+    label { 
+        display: block; 
+    }
+}

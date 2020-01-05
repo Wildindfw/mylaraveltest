@@ -1,0 +1,179 @@
+//-----------------------------------------------
+// @author Alex Madsen
+// @date October 30, 2018
+//-----------------------------------------------
+
+// Top Header Content
+.top-header { 
+    background-color: $bg-item; 
+
+    display: flex; 
+    align-items: center; 
+    position: relative; 
+
+    padding: 0 20px; 
+
+    border-bottom: 1px solid $border-search; 
+}
+
+.th-left { 
+    display: flex; 
+    align-items: center; 
+}
+
+.company { 
+    display: flex; 
+    align-items: center; 
+    width: 117px; 
+
+    span { 
+        font-size: 20px; 
+        font-family: $font-family-logo; 
+        color: black; 
+    }
+
+    &:hover { 
+        text-decoration: none; 
+
+        span { 
+            color: black; 
+        }
+    }
+}
+
+.logo {
+    font-size: 32px;
+    color: $brand-red; 
+
+    padding: 8px 8px 8px 0; 
+}
+
+.th-filter { 
+    height: 36px; 
+    width: 270px; 
+
+    display: flex; 
+    align-items: center; 
+
+    position: relative; 
+
+    span { 
+        display: inline-block; 
+        width: 100%; 
+        padding: 0 56px 0 40px; 
+    }
+
+    .trend-line { 
+        position: absolute; 
+        left: 10;
+        font-size: 22px; 
+        color: $brand-blue; 
+    }
+
+    .open-list { 
+        position: absolute; 
+        right: 8px; 
+    }
+}
+
+.th-mid { 
+    display: flex; 
+    flex: 1; 
+}
+
+.search-bar { 
+    margin: 0 16px; 
+    color: $search-text-dark; 
+    background-color: $bg-search;
+    border: 1px solid $border-search;  
+    border-radius: 4px; 
+    height: 36px;
+
+    padding: 0 16px 0 40px; 
+
+    flex: 1; 
+
+    position: relative; 
+
+    display: flex; 
+    align-items: center; 
+}
+
+.search-glass { 
+    font-size: 18px; 
+
+    position: absolute; 
+    left: 16px; 
+}
+
+.search-filters { 
+    display: flex; 
+    align-items: center; 
+
+    padding-right: 8px; 
+    margin-right: 8px; 
+
+    border-right: 1px solid $bg-search; 
+
+    color: $search-icon-black; 
+
+    i { 
+        font-size: 16px; 
+        padding: 8px; 
+        margin-left: 8px; 
+        &:first-child { 
+            margin-left: 0; 
+        }
+    }
+}
+
+.th-right { 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+.old-reddit-link { 
+    margin-left: 16px; 
+    height: 20px;
+    display: flex;
+    vertical-align: baseline; 
+    a { 
+        color: $brand-blue;
+        font-size: 12px; 
+        line-height: 16px; 
+        width: 120px; 
+
+        i {
+            font-size: 16px; 
+            margin-right: 8px; 
+        }
+
+        &:hover {
+            text-decoration: none; 
+            color: $brand-blue; 
+        }
+    }
+}
+
+.user-options { 
+    width: 70px; 
+    height: 30px; 
+    margin-left: 8px; 
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent; 
+    border-radius: 4px; 
+    background-color: $bg-item; 
+    justify-content: space-around;
+}
+
+.usr-img { 
+    color: $search-text-dark; 
+    font-size: 0.85rem; 
+    margin-right: 5px; 
+}
+
+.usr-open { 
+    font-size: 0.95rem; 
+}

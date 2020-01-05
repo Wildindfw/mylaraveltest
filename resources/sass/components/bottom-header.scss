@@ -1,0 +1,100 @@
+//-----------------------------------------------
+// @author Alex Madsen
+// @date October 30, 2018
+//-----------------------------------------------
+
+// Bottom Header Styles
+.bottom-header { 
+    background-color: $bg-item; 
+    font-family: $font-family-button; 
+    text-transform: uppercase; 
+    font-weight: 700; 
+    height: 40px;
+
+    .container { 
+        height: 100%;
+        
+        display: flex; 
+        align-items: center; 
+    }
+
+    .option-title { 
+        font-size: 10px; 
+        letter-spacing: 0.5px; 
+        line-height: 12px; 
+        margin-top: 1px;
+        color: $option-text; 
+    }
+
+    .view-options { 
+        padding: 10px 16px 10px 0; 
+        display: flex; 
+        align-items: center; 
+        border-right: 1px solid $border-search; 
+
+        .view-opt-icons { 
+            margin-left: 12px; 
+            width: 68px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+        }
+
+        .selected { 
+            color: $brand-blue; 
+        }
+
+        .deselected { 
+            color: $brand-blue-faded; 
+        }
+
+        i { 
+            font-size: 20px; 
+        }
+    }
+
+    .sort-options { 
+        display: flex; 
+        align-items: center; 
+        padding: 0 16px; 
+        height: 40px;
+
+        .bh-filter-list { 
+            display: flex;
+            align-items: center; 
+
+            margin-left: 16px;
+            color: $brand-blue; 
+            position: relative; 
+            height: 100%;
+        }
+
+        .bh-filter-type { 
+            width: 84px;
+        }
+
+        .bh-filter-location { 
+            width: 88px; 
+        }
+
+        .list-arrow { 
+            position: absolute; 
+            right: 10px; 
+            top: 10px; 
+        }
+
+        .flame { 
+            font-size: 16px; 
+            margin: 0 2px; 
+        }
+
+        span { 
+            letter-spacing: 0.5px; 
+        }
+
+        .sort-option { 
+            font-size: 12px; 
+            margin-left: 4px; 
+        }
+    }
+}

@@ -1,0 +1,195 @@
+//-----------------------------------------------
+// @author Alex Madsen
+// @date October 30, 2018
+//-----------------------------------------------
+
+%button-shared { 
+    display: inline-block; 
+    border: 1px solid $brand-blue; 
+    background-color: $brand-blue; 
+    color: $bg-item; 
+    border-radius: 4px; 
+    font-weight: bold;
+    padding: 3px 16px; 
+    font-size: 12px;  
+    font-family: $font-family-button; 
+    font-weight: 700; 
+    line-height: 24px; 
+    letter-spacing: 0.5px; 
+    text-transform: uppercase; 
+}
+
+%header-button-shared { 
+    @extend %button-shared; 
+    width: 120px; 
+
+    text-align: center; 
+
+    &:hover { 
+        text-decoration: none; 
+    }
+}
+
+.login-button { 
+    @extend %header-button-shared; 
+    background-color: $bg-item; 
+    color: $brand-blue; 
+
+    &:hover { 
+        background-color: $bg-search; 
+    }
+}
+
+.signin-button { 
+    @extend %header-button-shared; 
+    margin-left: 16px; 
+    color: $bg-item; 
+
+    &:hover { 
+        color: $bg-item; 
+        background-color: $brand-blue-highlight; 
+    }
+}
+
+.cta-button { 
+    @extend %button-shared; 
+
+    display: inline-block; 
+    margin-top: 8px; 
+
+    &:hover { 
+        color: $bg-item; 
+        text-decoration: none; 
+        background-color: $brand-blue-highlight; 
+    }
+}
+
+.cta-close-button { 
+    border: none; 
+    background: transparent; 
+    color: white; 
+    font-size: 12px; 
+
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+}
+
+.sr-button { 
+    @extend %button-shared; 
+
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+
+    margin-top: 12px;
+    height: 34px;
+
+    &:hover { 
+        color: $bg-item; 
+        background-color: $brand-blue-highlight; 
+        text-decoration: none; 
+    }
+}
+
+.rp-button { 
+    @extend %button-shared; 
+
+    width: 112px; 
+    height: 28px;
+    padding: 0; 
+
+    background-color: $brand-red; 
+    border-color: $brand-red; 
+}
+
+.tc-subs-button { 
+    @extend %button-shared; 
+
+    width: 100px; 
+}
+
+.new-post-button { 
+    @extend %button-shared; 
+    
+    display: inline-block; 
+    width: 100%; 
+    text-align: center; 
+
+    &:hover { 
+        color: $bg-item; 
+        text-decoration: none; 
+        background-color: $brand-blue-highlight; 
+    }
+}
+
+.profile-button { 
+    display: flex; 
+    align-items: center; 
+
+    border: 1px solid $border-search; 
+    border-radius: 4px; 
+
+    padding: 2px 5px; 
+
+    color: $post-title-black;  
+
+    margin-right: 8px; 
+
+    img { 
+        height: 20px;
+        width: 20px; 
+
+        margin-right: 5px;
+    }
+
+    &:hover {
+        text-decoration: none; 
+        color: $post-title-black2; 
+        background-color: $bg-search; 
+    }
+}
+
+.profile-button-text { 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.welcome-text, 
+.handle-text { 
+    font-size: 12px;
+    line-height: 16px; 
+}
+
+.welcome-text { 
+    font-weight: bold; 
+}
+
+.edit-button 
+{ 
+    @extend %button-shared; 
+    display: inline-block; 
+    margin-right: 8px; 
+
+    &:hover { 
+        color: $bg-item; 
+        background-color: $brand-blue-highlight; 
+        text-decoration: none; 
+    }
+}
+
+.logout-button 
+{ 
+    @extend %button-shared; 
+    display: inline-block; 
+
+    border-color: $brand-red; 
+    background-color: $bg-item; 
+    color: $brand-red; 
+
+    &:hover { 
+        color: $brand-red; 
+        background-color: $bg-search; 
+        text-decoration: none; 
+    }
+}

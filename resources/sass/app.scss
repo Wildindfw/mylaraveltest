@@ -1,0 +1,27 @@
+//-----------------------------------------------
+// @author Alex Madsen
+// @date October 30, 2018
+//----------------------------------------------- 
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round|Encode+Sans+Condensed|IBM+Plex+Sans:700|Montserrat:700,800,900|Noto+Sans');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Baseline
+@import 'base/baseline.scss'; 
+
+// Component Items
+@import 'components/wrapper.scss'; 
+@import 'components/buttons.scss'; 
+@import 'components/posts.scss'; 
+@import 'components/form.scss'; 
+
+// Section Items 
+@import 'components/top-header.scss'; 
+@import 'components/bottom-header.scss'; 
+@import 'components/main.scss'; 

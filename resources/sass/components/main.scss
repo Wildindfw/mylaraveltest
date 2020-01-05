@@ -1,0 +1,30 @@
+//-----------------------------------------------
+// @author Alex Madsen
+// @date October 30, 2018
+//-----------------------------------------------
+
+.reddit-main { 
+    padding: 20px 24px; 
+
+    .container { 
+        display: flex;
+    }
+}
+
+.main-feed { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+
+    flex: 2; 
+}
+
+.auxilliary-feed {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+
+    flex: 1;
+    
+    margin-left: 20px; 
+}
